@@ -3,31 +3,32 @@
 #include <stdlib.h>
 #include <string.h>
 
-int readData(char *buffer, int offset, int size, FILE *fp)
-{
-    int count;
-
-    if(feof(fp) == 1)
-    return 0;
-
-    fseek(fp, offset, SEEK_SET);
-    count = fread(buffer, sizeof(char), size, fp);
-
-    return count;
-}
-
 int main()
 {
-    char buffer[10] = { 0, };
-    int count;
+    char s1[1001];
+    char *sArr[1001] = { NULL, };
+    int i = 0, count = 0;
 
-    FILE *fp = fopen("hello.txt", "r");
+    scanf("%[^\n]s", s1);
 
-    count = readData(buffer, 9, 3, fp);
+    char *ptr = strtok(s1, "., ");
 
-    printf("%s, count : %d\n", buffer, count);
+    while(ptr != NULL)
+    {
+        sArr[i] = ptr;
+        i++;
 
-    fclose(fp);
+        ptr = strtok(NULL, "., ");    //자른 문자 다음붜 구분자 찾기.
+    }
 
+    for(int i = 0; i < 1001; i++)
+    {
+        if(sArr[i] != NULL && strcmp(sArr[i], "the") == 0)
+        count++;
+    }
+
+    printf("%d\n", count);
+
+    
     return 0;
 }
