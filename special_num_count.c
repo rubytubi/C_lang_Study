@@ -19,7 +19,7 @@ int main()
         i++;
 
         ptr = strtok(NULL, "., ");    //자른 문자 다음붜 구분자 찾기.
-    }/problems/level/6
+    }
 
     for(int i = 0; i < 1001; i++)
     {
