@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>중간 족보 30번</title>
+    <script>
+        function doSomething(first = new Date().getFullYear(), second = new Date().getMonth() + 1){
+
+            /*
+            first = first || (new Date().getFullYear())
+            second = second || (new Date().getMonth() + 1)
+            */
+
+            return `${first}년 ${second}월`
+        }
+
+        console.log(doSomething())
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

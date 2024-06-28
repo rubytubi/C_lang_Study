@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Selector Basic</title>
+    <style>
+        ul {overflow: hidden;}
+        li {
+            list-style: none;
+            float: left; padding:30px;
+        }
+        li:first-child{border-radius: 20px 0 0 200px;}
+        li:last-child{border-radius: 0 20px 200px 0;}
+
+        li:nth-child(2n){background-color: pink;}
+        li:nth-child(2n + 1){background-color: skyblue;}
+    </style>
+</head>
+<body>
+    <ul>
+        <li>고명석</li>
+        <li>선찬회</li>
+        <li>김석훈</li>
+        <li>이성민</li>
+        <li>권도하</li>
+        <li>김민혁</li>
+        <li>이제민</li>
+        <li>이수인</li>
+        <li>심주완</li>
+    </ul>
+</body>
+</html>

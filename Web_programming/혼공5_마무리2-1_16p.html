@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>혼공2 마무리2 1번 16p</title>
+    <script>
+        function multiplyAll(a, b){
+            let start = a
+            let finish = b
+
+            let output = 1
+            for(let i = start; i <= b; i++){
+                output *= i;
+            }
+            return output
+        }
+
+        console.log(multiplyAll(1, 2))
+        console.log(multiplyAll(1, 5))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+/* 간결한 버전
+<script>
+    function multiplyAll(a, b){
+        let res = 1;
+
+        for(let i = a; i <= b; i++){
+            res *= i;
+        }
+
+        return res;
+    }
+
+    console.log(multiplyAll(1, 2))
+    console.log(multiplyAll(1, 5))
+</script>
+*/

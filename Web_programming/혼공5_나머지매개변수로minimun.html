@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>혼공5 나머지 매개변수로 최솟값 구하기</title>
+    <script>
+        function minimun(...items){
+            let output = items[0]
+
+            for(const i of items){
+                if(output > i){
+                    output = i;
+                }
+            }
+            return output;
+        }
+
+        console.log('min = [52, 273, 32, 104, 285, 1294, 3428, 8392, -43189, -43297]')
+        console.log(` = ${minimun(52, 273, 32, 104, 285, 1294, 3428, 8392, -43189, -43297)}`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

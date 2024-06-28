@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>혼공5 콜백함수 - 익명함수 사용하기 35p</title>
+    <script>
+        //함수 선언
+        function callThreeTimes(callback){
+            for(let i = 1; i <= 3; i++){
+                callback(i)
+            }
+        }
+
+        //함수 호출
+        callThreeTimes(function(i){
+            console.log(`${i}번째 함수 호출`)
+        })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

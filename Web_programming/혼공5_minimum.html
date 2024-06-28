@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>혼공5 최솟값 구하기</title>
+    <script>
+        function minimum(array){
+            let output = array[0]
+
+            for(const i of array){
+                //  현재 output보다 더 작은 i가 있다면
+                if(output > i){
+                    output = i;
+                }
+            }
+            return output
+        }
+
+        const test_arr = [52, 2487, -3847, 2314, 9158, -13964, 13964139501, 1398 * 4238, -132846 * 18437, 99147, 123, 3, 5,1234, -315, -1234, -912347]
+        console.log(`${test_arr}중에서 최솟값은 => ${minimum(test_arr)} 입니다.`)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

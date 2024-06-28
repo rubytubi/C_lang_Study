@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>혼공4 마무리4 4번 36p</title>
+    <script>
+        let output =''
+        const size = 5
+        //코드 작성
+
+        //위쪽부분(별이 증가하는 부분)
+        for(let i = 0; i < size; i++){
+            for(let j = 0; j < size - i - 1; j++){
+                output += ' ';
+            }
+
+            for(let k = 0; k < (2 * i) + 1; k++){
+                output += '*';
+            }
+            output += '\n'
+        }
+
+        //아래쪽부분(별이 감소하는 부분)
+        for(let i = size - 2; i >= 0; i--){
+            for(let j = size - 1 - i; j > 0; j--){
+                output += ' '
+            }
+
+            for(let k = 0; k < (2 * i) + 1; k++){
+                output += '*'
+            }
+
+            if(i != 0){output += '\n';}
+        }
+        console.log(output)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
